@@ -1,6 +1,7 @@
 package br.gov.sc.saude.siscomaj;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private WebView webView;
     private static final String TAG = "Main";
     final Activity activity = this;
+    private int opt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +36,18 @@ public class MainActivity extends AppCompatActivity {
               }
 
         });
-
+        Bundle extras = getIntent().getExtras();
+        if(extras == null) {
+            opt = 1;
+        } else {
+            opt = extras.getInt("opt");
+        }
         //webView.loadUrl("http://172.22.27.52/siscomaj/index.php");
-        webView.loadUrl("http://172.22.27.80/mediawiki");
-
+        if(opt == 1) {
+            webView.loadUrl("http://172.22.27.80/mediawiki/index.php/Especial:Autenticar-se");
+        }else{
+            webView.loadUrl("http://172.22.27.80/mediawiki/index.php/Especial:Redefinir_autentica%C3%A7%C3%A3o");
+        }
     }
 
     @Override

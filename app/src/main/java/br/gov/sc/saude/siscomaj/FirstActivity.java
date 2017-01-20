@@ -12,11 +12,22 @@ public class FirstActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
-        Button mEmailSignInButton = (Button) findViewById(R.id.acessarBt);
-        mEmailSignInButton.setOnClickListener(new View.OnClickListener() {
+        Button acessarButton = (Button) findViewById(R.id.acessarBt);
+        acessarButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent nav = new Intent(getApplicationContext(), MainActivity.class);
+                nav.putExtra("opt", 1);
+                startActivity(nav);
+            }
+        });
+
+        Button redefButton = (Button) findViewById(R.id.redefBt);
+        redefButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent nav = new Intent(getApplicationContext(), MainActivity.class);
+                nav.putExtra("opt", 2);
                 startActivity(nav);
             }
         });

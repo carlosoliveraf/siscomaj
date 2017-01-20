@@ -19,7 +19,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#A2A98B">
+            android:background="#A2A98B"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -81,17 +83,19 @@
             android:id="@+id/acessarBt"
             android:layout_marginTop="60dp"
             android:background="#838676"
-            android:textColor="#C5C8B8" />
+            android:textColor="#C5C8B8"
+            android:textSize="18sp" />
 
         <Button
             android:text="Redefinir senha"
             android:layout_width="306dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:id="@+id/button2"
+            android:id="@+id/redefBt"
             android:background="#838676"
             android:textColor="#C5C8B8"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:textSize="18sp" />
 
         <ImageView
             android:layout_height="50dp"

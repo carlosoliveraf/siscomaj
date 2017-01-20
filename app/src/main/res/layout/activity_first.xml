@@ -79,16 +79,26 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:id="@+id/acessarBt"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="60dp"
             android:background="#838676"
             android:textColor="#C5C8B8" />
+
+        <Button
+            android:text="Redefinir senha"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/button2"
+            android:background="#838676"
+            android:textColor="#C5C8B8"
+            android:layout_marginTop="10dp" />
 
         <ImageView
             android:layout_height="50dp"
             android:layout_gravity="end"
             app:srcCompat="@mipmap/assinaturamin"
             android:id="@+id/imageView4"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:layout_width="150dp" />
 
     </LinearLayout>

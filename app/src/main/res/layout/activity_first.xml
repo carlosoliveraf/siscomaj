@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.gov.sc.saude.siscomaj.FirstActivity"
+    android:background="#bdc4a6">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#A2A98B">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="SGS - Siscomaj Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textStyle="normal|bold"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18sp"
+                    android:textAllCaps="true"
+                    android:textColor="#3E3B39"
+                    android:paddingLeft="15dp" />
+
+                <ImageView
+                    android:layout_width="73dp"
+                    android:layout_height="62dp"
+
+                    app:srcCompat="@mipmap/logogovmin"
+                    android:id="@+id/imageView2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp">
+
+        <ImageView
+            app:srcCompat="@mipmap/sgs_logo"
+            android:id="@+id/imageView3"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="242dp"
+            android:layout_height="128dp"
+             />
+
+        <Button
+            android:text="Acessar"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/acessarBt"
+            android:layout_marginTop="80dp"
+            android:background="#838676"
+            android:textColor="#C5C8B8" />
+
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            app:srcCompat="@mipmap/assinaturamin"
+            android:id="@+id/imageView4"
+            android:layout_marginTop="100dp"
+            android:layout_width="150dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

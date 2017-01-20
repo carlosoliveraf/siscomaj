@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //webView.loadUrl("http://172.22.27.52/siscomaj/index.php");
-        webView.loadUrl("http://172.22.27.80/mediawiki/index.php");
+        webView.loadUrl("http://172.22.27.80/mediawiki");
 
     }
 

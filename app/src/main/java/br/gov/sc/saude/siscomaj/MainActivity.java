@@ -15,12 +15,13 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "Main";
     final Activity activity = this;
     private int opt;
+    private String ip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        ip = "http://172.20.20.181/";
         webView = (WebView) findViewById(R.id.webView1);
 
         //webView.setPadding(0, 0, 0, 0);
@@ -44,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
         }
         //webView.loadUrl("http://172.22.27.52/siscomaj/index.php");
         if(opt == 1) {
-            webView.loadUrl("http://172.22.27.80/mediawiki/index.php/Especial:Autenticar-se");
+            webView.loadUrl(ip+"index.php/Especial:Autenticar-se");
         }else{
-            webView.loadUrl("http://172.22.27.80/mediawiki/index.php/Especial:Redefinir_autentica%C3%A7%C3%A3o");
+            webView.loadUrl(ip+"index.php/Especial:Redefinir_autentica%C3%A7%C3%A3o");
         }
     }
 

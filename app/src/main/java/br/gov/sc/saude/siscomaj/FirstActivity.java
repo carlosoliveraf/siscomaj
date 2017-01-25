@@ -12,6 +12,7 @@ public class FirstActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
+        //getSupportActionBar().hide();
         Button acessarButton = (Button) findViewById(R.id.acessarBt);
         acessarButton.setOnClickListener(new View.OnClickListener() {
             @Override
